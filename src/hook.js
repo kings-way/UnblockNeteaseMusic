@@ -282,7 +282,7 @@ const tryMatch = ctx => {
 
 	const inject = item => {
 		item.flag = 0
-		if ((item.code != 200 || item.freeTrialInfo) && (target == 0 || item.id == target)) {
+		if (true) {
 			return match(item.id)
 			.then(song => {
 				item.type = song.br === 999000 ? 'flac' : 'mp3'
